@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="sv">
+
+
+<head>
+<meta charset="utf-8">
+<title>Gladiator Manager</title>
+<link rel="stylesheet" href="style/gm-style.css">
+</head>
+
+
+<body>
+
+<article>
+
+<header>
+	<h1>Gladiator Manager</h1>
+</header>
+
+
+<main>
+
+<!--Section first paragraph.-->
+<section>
+	<hr>
+	<p>
+		<b>Med ett tämligen begränsat kapital anländer du till en livlig liten stad där arenaspel kommit att utgöra kärnan i regionens näringsliv.
+		Du har äntligen fått chansen att ta dig an rollen som ledaren över ett lag gladiatorer.<br><br>
+		Du kommer att få köpa, sälja och göra prioriteringar som avgör ditt och dina stridande undersåtars öden.
+		Du måste överväga och räkna på dina gladiatorers styrka, rörlighet, skadepotential och värden. 
+		Målet är att övervinna motståndare och maximera dina inkomster tills att du har samlat ihop guld nog för att kunna tillträda samhällets topp.
+		Detta kräver planerade drag och uträkningar, även om stridernas utfall inte med säkerhet kan avgöras på förhand.
+		Den erfarenhet striderna ger dig kommer att föra dig framåt.
+		<br><br>Frågan är om du har vad som krävs för att bli mästermanager och uppnå fulländat välstånd?</b>
+	</p>
+	<hr>
+</section>
+
+<!--Section list of features.-->
+<section>
+	<h2>Features</h2>
+	<ul class="center">
+		<!--<li>Manage teams of up to four gladiators</li>
+		<li>Buy and sell - manage your resources wisely</li>
+		<li>Your gladiators fight battles to win gold and gain experience</li>
+		<li>Bribe your opponents to skip fighting gladiators</li>
+		<li>Save your long game to continue later</li>-->
+		
+		<li>Hantera lag på upp till fyra gladiatorer</li>
+		<br>
+		<li>Köp och sälj - hantera dina resurser klokt</li>
+		<br>
+		<li>Utkämpa strider på arenan med dina gladiatorer för att vinna guld och erfarenhet</li>
+		<br>
+		<li>Muta dina moståndare för att undvika strider mot gladiatorer</li>
+		<br>
+		<li>Spara ditt spel för att fortsätta senare</li>
+		<br>
+		
+	</ul>
+	<hr>
+</section>
+
+<!--Section images.-->
+<section>
+	<h1>Laguppställning</h1>
+	<p>
+		Vid start av ett nytt spel möts du av fönstret där dina köpta gladiatorer hanteras. 
+		Laget består som högst av fyra kämpar. Dessa platser är till att börja med tomma.
+		Du har fem guld att handla dina första gladiatorer med.
+		<br><br>
+		Det är härifrån du väljer vilken av dina gladiatorer som ska sättas ut i strid mot den presenterade motståndaren.
+		<br><br>
+		Om du bedömer att din moståndare inte är värd spilla blod på så finns det en knapp för att muta motståndarmanagern 
+		med en summa guld för att slippa konfrontera dennes gladiator på arenan.
+		Det är en chansning eftersom du aldrig kan vara säker på vad nästa gladiator är för någon.
+		Kostnaden går vanligtvis på hälften av motståndargladiatorns värde. 
+		En gladiator som är värd ett guld eller mindre undantas från regeln och kan tas ur vägen utan kostnad.
+		<br><br>
+		I laguppställnings- och marknadsfönstren kan man trycka escape för att kunna starta om, spara och avsluta spelet.
+		Laddning av spel sker via huvudmenyn innan start av spel.
+	</p>
+	<img class="Roster" src="images/Roster.jpg" width="50%" height="50%" alt="Roster">
+
+	<h1>Marknad</h1>
+	<p>
+		På marknaden köper du utvalda gladiatorer.
+		Som högst presenteras fyra stycken och dessa måste köpas upp för att du ska presenteras med nya.
+		Om du inte anser det som presenteras vara värt att användas så bör du köpa upp dem för att sedan sälja dem vidare.
+		Försäljningen sker på laghanteringsfönstret och lyckligtvis är du klyftig nog att kunna sälja dem för samma pris.
+	</p>
+	<img class="Market" src="images/Market.jpg" width="50%" height="50%" alt="Market">
+	
+	<h1>Strid och statistik</h1>
+	<p>
+		När du är redo så är det dags att skicka ut en av dina kämpar på arenan mot den motståndare som presenterades.
+		Stridens gång genereras som ett textflöde och varje rad fås fram genom ett tryck på knappen "Fight!".
+		Detta pågår tills dess att en av gladiatorerna har stupat.
+		<br><br>
+		Stridens utgång beror på fyra värden och en gnutta tur.
+		Kostnadsvärdet för en kämpe beror givetvis på hur mycket av dessa värden kämpen behärskar.<br><br>
+		Dessa värden är följande: <br><br>
+		HP (Hit Points) - Detta är gladiatorns hälsa och utgör hur mycket stryk gladiatorn tål.
+		När HP når värdet 0 är kämpen död.
+		<br><br>
+		Agility - En gladiators rörlighet, vilket avgör hur väl en kämpe lyckas undvika eller träffa sin fiende.
+		Vid varje stridsrunda genereras ett slumpat värde mellan 1 och Agility-värdet för respektive gladiator.
+		Om den gladiator som vid rundan angriper får ett värde som överstiger värdet för den som försvarar blir 
+		det en träff som resulterar i skada baserat på Damage och Strength.
+		Om försvarens värde däremot överstiger angriparens så lyckas attacken undvikas.
+		<br><br>
+		Damage - Den skada som en gladiator gör som minst vid träff.
+		<br><br>
+		Strength - Ett skadevärde mellan 0 och Strength-värdet. Detta summeras ihop med det reguljära skadevärdet.
+	</p>
+	<img class="Arena" src="images/Arena.jpg" width="50%" height="50%" alt="Arena">
+	
+	<h1>Framsteg och erfarenhet</h1>
+	<p>
+		Efter att en strid utkämpats så tar du och dina undersåtar lärdom från striden.
+		Ditt lag får därför erfarenhet och detta innebär att kämparnas stridsvärden ökar något.
+		Med tiden ökar alltså även dina gladiatorers värde i guld.
+		<br><br>
+		Om du går segrande ur striden vinner du även en summa guld.
+		Denna summa är ett guld adderat med motståndargladiatorns guldvärde delat på två.
+		Om gladiatorn är värd mindre än två så får du nöja dig med det enstaka guldet.
+		Eventuella skador som din senast använda gladiator fått ta läks inte förrän du använt en annan av dina kämpar på arenan.
+		<br><br>
+		Om det däremot är du som är förloraren så har ditt lag åtminstone erhållit erfarenhet från striden.
+		Du har även nöjet att återigen strida mot samma motståndargladiator och den skada du lyckas åstadkomma fienden följer lyckligtvis med. 
+		Detta innebär att det kan vara värt använda flera av dina gladiatorer för att ta dig an en starkare motståndare.
+		Ifall det till trors inte skulle se ljust ut så finns alltid möjligheten att muta bort motståndarkämpen för en summa guld.
+		<br><br>
+		Spelet vinner man genom att införskaffa 100 guld.
+	</p>
+	<img class="Victory" src="images/Victory.jpg" width="50%" height="50%" alt="Victory">
+
+	<hr>
+</section>
+
+</main>
+
+
+<footer>
+	<hr>
+	<p>Creators: Ludwig Lind, Max Nordin and Sebastian Salomon Sjöberg.</p>
+</footer>
+
+
+</article>
+
+</body>
+
+
+</html>
